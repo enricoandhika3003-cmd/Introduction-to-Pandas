@@ -42,5 +42,12 @@ print(full_df.info())
 
 #PART 5
 print("\n")
-print('--- PART 5: Clean the Data ---')
+print('--- PART 5: Cleaning Data ---')
+print('Rows with missing values removed (dropna): ')
+clean_df = full_df.dropna()
+print(clean_df.to_string())
+print("\n")
+print('Missing values filled with 0 (fillna): ')
+
+
 
