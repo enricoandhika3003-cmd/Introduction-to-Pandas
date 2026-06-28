@@ -17,7 +17,7 @@ marks = [88, 76, 92, 67, 85]
  
 student_marks = pd.Series(
     marks,
-    index=["Aarav", "Meera", "Kabir", "Anaya", "Rohan"]
+    index=["Steve", "Saavi", "Phone", "Enrico", "Bienve"]
 )
  
 print(student_marks)
@@ -27,11 +27,11 @@ print(student_marks)
 print("\nPART 3: Pandas DataFrame")
  
 data = {
-    "Student": ["Aarav", "Meera", "Kabir", "Anaya", "Rohan"],
-    "Math": [88, 76, 92, 67, 85],
-    "Science": [91, 80, 89, 72, 87],
-    "English": [84, 78, 95, 70, 82],
-    "Attendance": [96, 90, 98, 85, 92]
+    "Student": ["Steve", "Saavi", "Phone", "Enrico", "Bienve"],
+    "Math": [35, 76, 89, 95, 67],
+    "Science": [41, 80, 90, 92, 82],
+    "English": [22, 78, 82, 87, 91],
+    "Attendance": [1, 90, 89, 100, 95]
 }
  
 df = pd.DataFrame(data)
@@ -67,10 +67,10 @@ print(student_data.info())
 print("\nPART 6: Cleaning Data")
  
 messy_data = {
-    "Student": ["Aarav", "Meera", "Kabir", "Anaya", "Rohan"],
-    "Math": [88, None, 92, 67, 85],
-    "Science": [91, 80, None, 72, 87],
-    "English": [84, 78, 95, None, 82]
+    "Student": ["Steve", "Saavi", "Phone", "Enrico", "Bienve"],
+    "Math": [67, None, 92, 67, 85],
+    "Science": [42, 80, None, 72, 87],
+    "English": [21, 78, 95, None, 82]
 }
  
 messy_df = pd.DataFrame(messy_data)
