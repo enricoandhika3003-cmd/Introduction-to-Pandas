@@ -48,6 +48,8 @@ clean_df = full_df.dropna()
 print(clean_df.to_string())
 print("\n")
 print('Missing values filled with 0 (fillna): ')
+filled_df = full_df.fillna(0)
+print(filled_df.to_string())
 
 
 
